@@ -102,6 +102,9 @@ input[type=number] {
 	padding: 0;
 	margin-left: 5px;
 }
+.contact-card a {
+    color: white;
+}
 /* Navbar top */
 
 /* Menu */
