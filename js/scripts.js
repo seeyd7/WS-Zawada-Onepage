@@ -76,4 +76,7 @@ addEventListener("scroll", () => {
         navBar.style.top = "38px";
     }
 })
+function myhref(web) {
+    window.open('https://www.google.com/maps/dir//Lud%C5%BAmierska+25A+34-400+Nowy+Targ/@49.4728089,20.0094221,17z/data=!4m5!4m4!1m0!1m2!1m1!1s0x4715e4fc2204c859:0x99fb257976a16172', '_blank');
+}
 
