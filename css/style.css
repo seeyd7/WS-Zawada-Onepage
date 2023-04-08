@@ -490,6 +490,9 @@ nav{
     border-radius: 50%;
     transition: 0.3s linear;
 }
+.card a {
+    color: black;
+}
 /* Contact */  
 
 /* Footer */
