@@ -104,6 +104,10 @@ input[type=number] {
 }
 .contact-card a {
     color: white;
+    transition: .3s ease;
+}
+.contact-card a:hover {
+    color: var(--main-color);
 }
 /* Navbar top */
 
