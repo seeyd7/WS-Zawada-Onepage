@@ -196,3 +196,11 @@
         width: 100%;
     }
 }
+/* @media screen and (min-width: 1200px) {
+    .card {
+        background-color: var(--bg);
+    }
+    .card a, .card p {
+        color: white !important;
+    }
+} */
