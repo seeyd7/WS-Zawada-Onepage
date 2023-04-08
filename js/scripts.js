@@ -40,6 +40,11 @@ menuToggler.addEventListener("click", () => {
 	}
 });
 
+function disableMenu() {
+    menuToggler.classList.remove("active");
+    navMenu.classList.remove("active");
+}
+
 addEventListener("scroll", () => {
 	let scroll = this.scrollY;
 	if(scroll > menu.clientHeight) {
@@ -71,3 +76,4 @@ addEventListener("scroll", () => {
         navBar.style.top = "38px";
     }
 })
+
