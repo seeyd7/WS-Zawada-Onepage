@@ -305,20 +305,24 @@ nav{
     height: 100vh;
     width: 100%;
     top: 8vh;
-    padding: 2%;
+    padding: 3%;
     background-color: aliceblue;
     position: fixed;
     right: -100%;
     transition: .3s ease-in-out;
     z-index: 998;
 }
-.offer-slider-squash i, .offer-slider-badminton i, .offer-slider-bouldering i, .offer-slider-medical i, .offer-slider-kids i, .offer-slider-table i {
+.offer-slider-disable {
     align-self: flex-start;
     justify-self: flex-end;
     cursor: pointer;
+    opacity: 0;
+    transition: .3s;
+    transition-delay: .4s;
 }
 .active2 {
     right: 0;
+    opacity: 1 !important;
 }
 /* Informations */
 

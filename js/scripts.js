@@ -1,5 +1,11 @@
 window.onscroll = () => { 
     const myNav = document.querySelector("nav");
+    let squash = document.querySelector(".offer-slider-squash");
+    let badminton = document.querySelector(".offer-slider-badminton");
+    let bouldering = document.querySelector(".offer-slider-bouldering");
+    let medical = document.querySelector(".offer-slider-medical");
+    let kids = document.querySelector(".offer-slider-kids");
+    let table = document.querySelector(".offer-slider-table");
 
     if (window.scrollY > 50) {
         myNav.classList.add("navbar-scrolled");
@@ -7,6 +13,12 @@ window.onscroll = () => {
     } else {
         myNav.classList.remove("navbar-scrolled");
         myNav.classList.add("navbar-top");
+        squash.classList.remove("active2");
+        badminton.classList.remove("active2");
+        bouldering.classList.remove("active2");
+        medical.classList.remove("active2");
+        kids.classList.remove("active2");
+        table.classList.remove("active2");
     }
 };
 
@@ -89,24 +101,31 @@ let bouldering = document.querySelector(".offer-slider-bouldering");
 let medical = document.querySelector(".offer-slider-medical");
 let kids = document.querySelector(".offer-slider-kids");
 let table = document.querySelector(".offer-slider-table");
+let sliderButton = document.querySelector(".offer-slider-disable");
 
 function squashSlide() {
     squash.classList.add("active2");
+    sliderButton.classList.add("active2");
 }
 function badmintonSlide() {
     badminton.classList.add("active2");
+    sliderButton.classList.add("active2");
 }
 function boulderingSlide() {
     bouldering.classList.add("active2");
+    sliderButton.classList.add("active2");
 }
 function medicalSlide() {
     medical.classList.add("active2");
+    sliderButton.classList.add("active2");
 }
 function kidsSlide() {
     kids.classList.add("active2");
+    sliderButton.classList.add("active2");
 }
 function tableSlide() {
     table.classList.add("active2");
+    sliderButton.classList.add("active2");
 }
 
 function disableOfferSlider() {
@@ -116,4 +135,5 @@ function disableOfferSlider() {
     medical.classList.remove("active2");
     kids.classList.remove("active2");
     table.classList.remove("active2");
+    sliderButton.classList.remove("active2")
 }
