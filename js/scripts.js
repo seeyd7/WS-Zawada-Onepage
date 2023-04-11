@@ -82,3 +82,38 @@ function myhref(web) {
 function call() {
     window.location = "tel:+48668347263";
 }
+
+const squash = document.querySelector(".offer-slider-squash");
+const badminton = document.querySelector(".offer-slider-badminton");
+const bouldering = document.querySelector(".offer-slider-bouldering");
+const medical = document.querySelector(".offer-slider-medical");
+const kids = document.querySelector(".offer-slider-kids");
+const table = document.querySelector(".offer-slider-table");
+
+function squashSlide() {
+    squash.classList.add("active2");
+}
+function badmintonSlide() {
+    badminton.classList.add("active2");
+}
+function boulderingSlide() {
+    bouldering.classList.add("active2");
+}
+function medicalSlide() {
+    medical.classList.add("active2");
+}
+function kidsSlide() {
+    kids.classList.add("active2");
+}
+function tableSlide() {
+    table.classList.add("active2");
+}
+
+function disableOfferSlider() {
+    squash.classList.remove("active2");
+    badminton.classList.remove("active2");
+    bouldering.classList.remove("active2");
+    medical.classList.remove("active2");
+    kids.classList.remove("active2");
+    table.classList.remove("active2");
+}

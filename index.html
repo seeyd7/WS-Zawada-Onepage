@@ -62,10 +62,11 @@
         </button>
         <div class="navbar-menu">
             <a href="#main-carousel" onclick="disableMenu()">Strona główna</a>
-            <a href="#main" onclick="disableMenu()">Oferta</a>
-            <a href="#informations" onclick="disableMenu()">Aktualności</a>
-            <a href="#gallery" onclick="disableMenu()">Galeria</a>
+            <a href="#offer" onclick="disableMenu()">Oferta</a>
+            <a href="#blog" onclick="disableMenu()">Aktualności</a>
+            <a href="#gallery-anchor" onclick="disableMenu()">Galeria</a>
             <a href="#contact-section" onclick="disableMenu()">Kontakt</a>
+            <a href="#">Cennik</a>
         </div>
     </nav>
 <!-- Menu -->
@@ -103,40 +104,78 @@
 </div>
 <!-- Carousel -->
 
-<!-- Informations -->
+<!-- Offer-->
+<a id="offer" class="anchor"></a>
 <main id="main" class="grid-item">
+    <div class="offer-slider-squash">
+        <i onclick="disableOfferSlider()" class="fa-regular fa-circle-xmark fa-lg"></i>
+        <h1>SQUASH</h1>
+        <p></p>
+        <p></p>
+    </div>
+    <div class="offer-slider-badminton">
+        <i onclick="disableOfferSlider()" class="fa-regular fa-circle-xmark fa-lg"></i>
+        <h1>Badminton</h1>
+        <p></p>
+        <p></p>
+    </div>
+    <div class="offer-slider-bouldering">
+        <i onclick="disableOfferSlider()" class="fa-regular fa-circle-xmark fa-lg"></i>
+        <h1>Bouldering - wspinaczka</h1>
+        <p></p>
+        <p></p>
+    </div>
+    <div class="offer-slider-medical">
+        <i onclick="disableOfferSlider()" class="fa-regular fa-circle-xmark fa-lg"></i>
+        <h1>Trening medyczny&trade;</h1>
+        <p></p>
+        <p></p>
+    </div>
+    <div class="offer-slider-kids">
+        <i onclick="disableOfferSlider()" class="fa-regular fa-circle-xmark fa-lg"></i>
+        <h1>Ćwiczenia korekcyjne dla najmłodszych</h1>
+        <p></p>
+        <p></p>
+    </div>
+    <div class="offer-slider-table">
+        <i onclick="disableOfferSlider()" class="fa-regular fa-circle-xmark fa-lg"></i>
+        <h1>Tenis stołowy</h1>
+        <p></p>
+        <p></p>
+    </div>
     <section class="wrapper">
         <h1 class="heading">Nasza<span> oferta</span></h1>
         <div class="card-holder" style="flex-wrap: wrap; width: 100%;">
-            <div class="meta-card">
+            <div onclick="squashSlide()" class="meta-card">
                 <img src="img/info-img-3.png" alt="INFO">
                 <h4>Squash</h4>
             </div>
-            <div class="meta-card">
+            <div onclick="badmintonSlide()" class="meta-card">
                 <img src="img/info-img-1.png" alt="INFO">
                 <h4>Badminton</h4>
             </div>
-            <div class="meta-card">
+            <div onclick="boulderingSlide()" class="meta-card">
                 <img src="img/info-img-8.png" alt="INFO">
                 <h4>Bouldering</h4>
             </div>
-            <div class="meta-card">
+            <div onclick="medicalSlide()" class="meta-card">
                 <img src="img/info-img-7.png" alt="INFO">
                 <h4>Trening Medyczny&trade;</h4>
             </div>
-            <div class="meta-card">
+            <div onclick="kidsSlide()" class="meta-card">
                 <img src="img/info-img-4.png" alt="INFO">
                 <h4>Ćwiczenia korekcyjne dzieci</h4>
             </div>
-            <div class="meta-card">
+            <div onclick="tableSlide()" class="meta-card">
                 <img src="img/info-img-5.png" alt="INFO">
                 <h4>Ping-pong</h4>
             </div>
         </div>
     </section>
-<!-- Informations -->
+<!-- Offer -->
 
 <!-- Blog -->
+<a id="blog" class="anchor"></a>
     <section id="informations" class="products-wrapper">
         <h1 class="heading">Informacje i <span>aktualności</span></h1>
         <section class="products">
@@ -161,8 +200,9 @@
 <!-- Blog -->
 
 <!-- Gallery -->
+<a id="gallery-anchor" class="anchor"></a>
 <section id="gallery">
-    <h1 class="heading" style="padding-top: 1%">Galeria<span> zdjęć</span></h1>
+    <h1 class="heading" style="padding-top: 2%;">Galeria<span> zdjęć</span></h1>
     <div class="carousel" data-flickity='{ "groupCells": true }'>
         <div class="carousel-cell gallery-carousel" style="background-image: url(https://picsum.photos/1920/1080); background-position: fixed; background-repeat: no-repeat; background-size: cover;"></div>
         <div class="carousel-cell gallery-carousel" style="background-image: url(https://picsum.photos/1920/1070); background-position: fixed; background-repeat: no-repeat; background-size: cover;"></div>

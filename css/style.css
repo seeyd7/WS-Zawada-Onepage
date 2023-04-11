@@ -26,7 +26,12 @@ input[type=number] {
     -moz-appearance: textfield;
     appearance: textfield;
 }
-
+a.anchor {
+    display: block; 
+    position: relative; 
+    top: -80px; 
+    visibility: hidden;
+}
 /* Scrollbar */
 ::-webkit-scrollbar{
     width: 10px;
@@ -292,6 +297,28 @@ nav{
     transform: scale(1.05);
     background: var(--main-color);
 }
+.offer-slider-squash, .offer-slider-badminton, .offer-slider-bouldering, .offer-slider-medical, .offer-slider-kids, .offer-slider-table {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    top: 8vh;
+    padding: 4%;
+    background-color: aliceblue;
+    position: fixed;
+    right: -100%;
+    transition: .3s ease-in-out;
+    z-index: 998;
+}
+.offer-slider-squash i, .offer-slider-badminton i, .offer-slider-bouldering i, .offer-slider-medical i, .offer-slider-kids i, .offer-slider-table i {
+    align-self: flex-start;
+    justify-self: flex-end;
+    cursor: pointer;
+}
+.active2 {
+    right: 0;
+}
 /* Informations */
 
 /* Blog */
@@ -362,9 +389,6 @@ nav{
 /* Blog */
 
 /* Gallery */
-/* .carousel {
-    height: 65vh;
-} */
 .gallery-carousel {
     width: 25%;
     height: 65vh;
