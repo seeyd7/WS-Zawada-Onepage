@@ -55,7 +55,7 @@
         <a href="" class="logo">
             <img src="img/logob.png" alt="LOGO">
         </a>
-        <button class="menu-toggler">
+        <button onclick="disableOfferSlider()" class="menu-toggler">
             <span></span>
             <span></span>
             <span></span>
@@ -146,27 +146,27 @@
     <section class="wrapper">
         <h1 class="heading">Nasza<span> oferta</span></h1>
         <div class="card-holder" style="flex-wrap: wrap; width: 100%;">
-            <div onclick="squashSlide()" class="meta-card">
+            <div onclick="squashSlide(); disableMenu() " class="meta-card">
                 <img src="img/info-img-3.png" alt="INFO">
                 <h4>Squash</h4>
             </div>
-            <div onclick="badmintonSlide()" class="meta-card">
+            <div onclick="badmintonSlide(); disableMenu()" class="meta-card">
                 <img src="img/info-img-1.png" alt="INFO">
                 <h4>Badminton</h4>
             </div>
-            <div onclick="boulderingSlide()" class="meta-card">
+            <div onclick="boulderingSlide(); disableMenu()" class="meta-card">
                 <img src="img/info-img-8.png" alt="INFO">
                 <h4>Bouldering</h4>
             </div>
-            <div onclick="medicalSlide()" class="meta-card">
+            <div onclick="medicalSlide(); disableMenu()" class="meta-card">
                 <img src="img/info-img-7.png" alt="INFO">
                 <h4>Trening Medyczny&trade;</h4>
             </div>
-            <div onclick="kidsSlide()" class="meta-card">
+            <div onclick="kidsSlide(); disableMenu()" class="meta-card">
                 <img src="img/info-img-4.png" alt="INFO">
                 <h4>Ćwiczenia korekcyjne dzieci</h4>
             </div>
-            <div onclick="tableSlide()" class="meta-card">
+            <div onclick="tableSlide(); disableMenu()" class="meta-card">
                 <img src="img/info-img-5.png" alt="INFO">
                 <h4>Ping-pong</h4>
             </div>

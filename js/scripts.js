@@ -101,31 +101,31 @@ let bouldering = document.querySelector(".offer-slider-bouldering");
 let medical = document.querySelector(".offer-slider-medical");
 let kids = document.querySelector(".offer-slider-kids");
 let table = document.querySelector(".offer-slider-table");
-let sliderButton = document.querySelector(".offer-slider-disable");
+let sliderButton = document.querySelectorAll(".offer-slider-disable");
 
 function squashSlide() {
     squash.classList.add("active2");
-    sliderButton.classList.add("active2");
+    sliderButton[0].classList.add("active2");
 }
 function badmintonSlide() {
     badminton.classList.add("active2");
-    sliderButton.classList.add("active2");
+    sliderButton[1].classList.add("active2");
 }
 function boulderingSlide() {
     bouldering.classList.add("active2");
-    sliderButton.classList.add("active2");
+    sliderButton[2].classList.add("active2");
 }
 function medicalSlide() {
     medical.classList.add("active2");
-    sliderButton.classList.add("active2");
+    sliderButton[3].classList.add("active2");
 }
 function kidsSlide() {
     kids.classList.add("active2");
-    sliderButton.classList.add("active2");
+    sliderButton[4].classList.add("active2");
 }
 function tableSlide() {
     table.classList.add("active2");
-    sliderButton.classList.add("active2");
+    sliderButton[5].classList.add("active2");
 }
 
 function disableOfferSlider() {
