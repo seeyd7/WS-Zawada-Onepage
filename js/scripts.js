@@ -83,12 +83,12 @@ function call() {
     window.location = "tel:+48668347263";
 }
 
-const squash = document.querySelector(".offer-slider-squash");
-const badminton = document.querySelector(".offer-slider-badminton");
-const bouldering = document.querySelector(".offer-slider-bouldering");
-const medical = document.querySelector(".offer-slider-medical");
-const kids = document.querySelector(".offer-slider-kids");
-const table = document.querySelector(".offer-slider-table");
+let squash = document.querySelector(".offer-slider-squash");
+let badminton = document.querySelector(".offer-slider-badminton");
+let bouldering = document.querySelector(".offer-slider-bouldering");
+let medical = document.querySelector(".offer-slider-medical");
+let kids = document.querySelector(".offer-slider-kids");
+let table = document.querySelector(".offer-slider-table");
 
 function squashSlide() {
     squash.classList.add("active2");
