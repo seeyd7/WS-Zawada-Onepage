@@ -51,11 +51,9 @@ addEventListener("scroll", () => {
     go2Top.style.opacity = 1;
     go2Top.style.lineHeight = "40px";
 		go2Top.style.cursor = "pointer";
-		console.log(go2Top.style.cursor);
 	} else {
 		go2Top.style.opacity = 0;
 		go2Top.style.cursor = "default";
-		console.log(go2Top.style.cursor);
 	}
 })
 

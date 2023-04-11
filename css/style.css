@@ -459,7 +459,7 @@ nav{
 }
 .card {
     font-size: 18px;
-    width: 100%;
+    width: 20%;
     height: 300px;
     display: flex;
     flex-direction: column;
