@@ -299,12 +299,13 @@ nav{
 }
 .offer-slider-squash, .offer-slider-badminton, .offer-slider-bouldering, .offer-slider-medical, .offer-slider-kids, .offer-slider-table {
     display: flex;
+    text-align: center;
     align-items: center;
     flex-direction: column;
     height: 100vh;
     width: 100%;
     top: 8vh;
-    padding: 4%;
+    padding: 2%;
     background-color: aliceblue;
     position: fixed;
     right: -100%;
