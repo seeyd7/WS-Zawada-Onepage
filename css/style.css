@@ -325,6 +325,8 @@ nav{
     width: 100%;
 }
 .offer-slider-disable {
+    transition: .3s;
+    transition-delay: .4s;
     position: absolute;
     top: 6vh;
     margin-right: 4%;
@@ -335,6 +337,9 @@ nav{
 }
 .offer-slider-text {
     display: none;
+}
+.offer-slider-question {
+    cursor: pointer;
 }
 /* Informations */
 
