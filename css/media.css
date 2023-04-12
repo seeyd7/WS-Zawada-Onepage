@@ -97,7 +97,7 @@
         font-size: 18pt;
     }
 }
-@media screen and (max-width: 1100px){
+@media screen and (max-width: 1200px){
     .home h1 {
       font-size: 35px;
     }

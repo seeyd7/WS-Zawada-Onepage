@@ -331,6 +331,7 @@ nav{
     top: 6vh;
     margin-right: 4%;
     right: 0;
+    cursor: pointer;
 }
 .active2 {
     right: 0;
