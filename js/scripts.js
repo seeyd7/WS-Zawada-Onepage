@@ -95,50 +95,35 @@ function call() {
     window.location = "tel:+48668347263";
 }
 
-let squash = document.querySelector(".offer-slider-squash");
-let badminton = document.querySelector(".offer-slider-badminton");
-let bouldering = document.querySelector(".offer-slider-bouldering");
-let medical = document.querySelector(".offer-slider-medical");
-let kids = document.querySelector(".offer-slider-kids");
-let table = document.querySelector(".offer-slider-table");
-let sliderButton = document.querySelectorAll(".offer-slider-disable");
-
-function squashSlide() {
-    squash.classList.add("active2");
-    sliderButton[0].classList.add("active2");
-}
-function badmintonSlide() {
-    badminton.classList.add("active2");
-    sliderButton[1].classList.add("active2");
-}
-function boulderingSlide() {
-    bouldering.classList.add("active2");
-    sliderButton[2].classList.add("active2");
-}
-function medicalSlide() {
-    medical.classList.add("active2");
-    sliderButton[3].classList.add("active2");
-}
-function kidsSlide() {
-    kids.classList.add("active2");
-    sliderButton[4].classList.add("active2");
-}
-function tableSlide() {
-    table.classList.add("active2");
-    sliderButton[5].classList.add("active2");
+const sliders = document.querySelectorAll(".offer-slider");
+const sliderButtons = document.querySelectorAll(".offer-slider-disable");
+const enablers = document.querySelectorAll(".offer-slider-enabler");
+ 
+enablers.forEach(enabler => {enabler.addEventListener('click', showHide, false);});
+function showHide(elem) {
+    sliders.forEach((slider, i) => {
+        slider.classList.contains("active2") ? slider.classList.remove("active2", i == this.id)
+                                             : slider.classList.toggle("active2", i == this.id);
+    });
+ 
+    sliderButtons.forEach((button, i) => {
+        button.classList.contains("active2") ? button.classList.remove("active2", i == this.id)
+                                             : button.classList.toggle("active2", i == this.id);
+    });
 }
 
-function disableOfferSlider() {
-    squash.classList.remove("active2");
-    badminton.classList.remove("active2");
-    bouldering.classList.remove("active2");
-    medical.classList.remove("active2");
-    kids.classList.remove("active2");
-    table.classList.remove("active2");
-    sliderButton[0].classList.remove("active2")
-    sliderButton[1].classList.remove("active2")
-    sliderButton[2].classList.remove("active2")
-    sliderButton[3].classList.remove("active2")
-    sliderButton[4].classList.remove("active2")
-    sliderButton[5].classList.remove("active2")
+var offerSliderQuestion = document.querySelectorAll(".offer-slider-question");
+
+for (var i = 0; i < offerSliderQuestion.length; i++) {
+   offerSliderQuestion[i].addEventListener("click", function() {
+       var tekst_id = this.getAttribute("data-tekst-id");
+
+       var teksty = document.querySelectorAll(".offer-slider-text");
+       for (var j = 0; j < teksty.length; j++) {
+           teksty[j].style.display = "none";
+       }
+
+       var wybrany_tekst = document.getElementById(tekst_id);
+       wybrany_tekst.style.display = "block";
+   });
 }

@@ -107,8 +107,8 @@
 <!-- Offer-->
 <a id="offer" class="anchor"></a>
 <main id="main" class="grid-item">
-    <div class="offer-slider-squash">
-        <i onclick="disableOfferSlider()" class="fa-regular fa-circle-xmark fa-lg offer-slider-disable"></i>
+    <div class="offer-slider-squash offer-slider">
+        <i class="fa-regular fa-circle-xmark fa-lg offer-slider-disable offer-slider-enabler" id="0"></i>
         <h1>SQUASH</h1>
         <p>Squash to jeden z najbardziej intensywnych sportów na świecie. W MOVADO można
             cieszyć się nim na wiele sposobów: od indywidualnych lekcji ze z trenerami, poprzez
@@ -124,32 +124,32 @@
         <p><b>W co się ubrać na Squasha?</b></p>
         <!-- <img src="img/squash-slider.jpg"> -->
     </div>
-    <div class="offer-slider-badminton">
-        <i onclick="disableOfferSlider()" class="fa-regular fa-circle-xmark fa-lg offer-slider-disable"></i>
+    <div class="offer-slider-badminton offer-slider">
+        <i class="fa-regular fa-circle-xmark fa-lg offer-slider-disable offer-slider-enabler" id="1"></i>
         <h1>Badminton</h1>
         <p></p>
         <p></p>
     </div>
-    <div class="offer-slider-bouldering">
-        <i onclick="disableOfferSlider()" class="fa-regular fa-circle-xmark fa-lg offer-slider-disable"></i>
+    <div class="offer-slider-bouldering offer-slider">
+        <i class="fa-regular fa-circle-xmark fa-lg offer-slider-disable offer-slider-enabler" id="2"></i>
         <h1>Bouldering - wspinaczka</h1>
         <p></p>
         <p></p>
     </div>
-    <div class="offer-slider-medical">
-        <i onclick="disableOfferSlider()" class="fa-regular fa-circle-xmark fa-lg offer-slider-disable"></i>
+    <div class="offer-slider-medical offer-slider">
+        <i class="fa-regular fa-circle-xmark fa-lg offer-slider-disable offer-slider-enabler" id="3"></i>
         <h1>Trening medyczny&trade;</h1>
         <p></p>
         <p></p>
     </div>
-    <div class="offer-slider-kids">
-        <i onclick="disableOfferSlider()" class="fa-regular fa-circle-xmark fa-lg offer-slider-disable"></i>
+    <div class="offer-slider-kids offer-slider">
+        <i class="fa-regular fa-circle-xmark fa-lg offer-slider-disable offer-slider-enabler" id="4"></i>
         <h1>Ćwiczenia korekcyjne dla najmłodszych</h1>
         <p></p>
         <p></p>
     </div>
-    <div class="offer-slider-table">
-        <i onclick="disableOfferSlider()" class="fa-regular fa-circle-xmark fa-lg offer-slider-disable"></i>
+    <div class="offer-slider-table offer-slider">
+        <i class="fa-regular fa-circle-xmark fa-lg offer-slider-disable offer-slider-enabler" id="5"></i>
         <h1>Tenis stołowy</h1>
         <p></p>
         <p></p>
@@ -157,27 +157,27 @@
     <section class="wrapper">
         <h1 class="heading">Nasza<span> oferta</span></h1>
         <div class="card-holder" style="flex-wrap: wrap; width: 100%;">
-            <div onclick="squashSlide(); disableMenu() " class="meta-card">
+            <div class="meta-card offer-slider-enabler" id="0">
                 <img src="img/info-img-3.png" alt="INFO">
                 <h4>Squash</h4>
             </div>
-            <div onclick="badmintonSlide(); disableMenu()" class="meta-card">
+            <div class="meta-card offer-slider-enabler" id="1">
                 <img src="img/info-img-1.png" alt="INFO">
                 <h4>Badminton</h4>
             </div>
-            <div onclick="boulderingSlide(); disableMenu()" class="meta-card">
+            <div class="meta-card offer-slider-enabler" id="2">
                 <img src="img/info-img-8.png" alt="INFO">
                 <h4>Bouldering</h4>
             </div>
-            <div onclick="medicalSlide(); disableMenu()" class="meta-card">
+            <div class="meta-card offer-slider-enabler" id="3">
                 <img src="img/info-img-7.png" alt="INFO">
                 <h4>Trening Medyczny&trade;</h4>
             </div>
-            <div onclick="kidsSlide(); disableMenu()" class="meta-card">
+            <div class="meta-card offer-slider-enabler" id="4">
                 <img src="img/info-img-4.png" alt="INFO">
                 <h4>Ćwiczenia korekcyjne dzieci</h4>
             </div>
-            <div onclick="tableSlide(); disableMenu()" class="meta-card">
+            <div class="meta-card offer-slider-enabler" id="5">
                 <img src="img/info-img-5.png" alt="INFO">
                 <h4>Ping-pong</h4>
             </div>

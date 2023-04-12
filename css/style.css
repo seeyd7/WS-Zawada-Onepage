@@ -300,25 +300,40 @@ nav{
 .offer-slider-squash, .offer-slider-badminton, .offer-slider-bouldering, .offer-slider-medical, .offer-slider-kids, .offer-slider-table {
     display: flex;
     align-items: center;
-    flex-direction: column;
+    justify-content: space-between;
+    flex-direction: row;
     height: 100vh;
     width: 100%;
     top: 8vh;
-    padding: 2% 10%;
-    font-size: 1.15rem;
+    padding: 2%;
+    font-size: 1rem;
     background-color: aliceblue;
     position: fixed;
     right: -100%;
     transition: .3s ease-in-out;
     z-index: 998;
 }
+.offer-slider-content{
+    width: 40%;
+}
+.offer-slider-image {
+    width: 50%;
+}
 .offer-slider-squash img, .offer-slider-badminton img, .offer-slider-bouldering img, .offer-slider-medical img, .offer-slider-kids img, .offer-slider-table img
 .offer-slider-disable img {
-    width: 30%;
+    width: 100%;
+}
+.offer-slider-disable {
+    position: absolute;
+    top: 6vh;
+    margin-right: 4%;
 }
 .active2 {
     right: 0;
     opacity: 1 !important;
+}
+.offer-slider-text {
+    display: none;
 }
 /* Informations */
 
