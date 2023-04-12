@@ -330,9 +330,12 @@ nav{
     position: absolute;
     top: 6vh;
     margin-right: 4%;
+    right: 0;
 }
 .active2 {
     right: 0;
+}
+.button-active {
     opacity: 1 !important;
 }
 .offer-slider-text {

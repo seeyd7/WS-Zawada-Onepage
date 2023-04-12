@@ -105,8 +105,8 @@ function showHide(elem) {
     });
  
     sliderButtons.forEach((button, i) => {
-        button.classList.contains("active2") ? button.classList.remove("active2", i == this.id)
-                                             : button.classList.toggle("active2", i == this.id);
+        button.classList.contains("button-active") ? button.classList.remove("button-active", i == this.id)
+                                             : button.classList.toggle("button-active", i == this.id);
     });
 }
 
