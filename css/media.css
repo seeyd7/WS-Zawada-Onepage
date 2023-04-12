@@ -110,7 +110,7 @@
     .navbar-menu{
       position: fixed;
       height: 100vh;
-      width: 85%;
+      width: 100%;
       background: #131212;
       right: -100%;
       top: 0;
