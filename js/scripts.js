@@ -1,11 +1,5 @@
 window.onscroll = () => { 
     const myNav = document.querySelector("nav");
-    let squash = document.querySelector(".offer-slider-squash");
-    let badminton = document.querySelector(".offer-slider-badminton");
-    let bouldering = document.querySelector(".offer-slider-bouldering");
-    let medical = document.querySelector(".offer-slider-medical");
-    let kids = document.querySelector(".offer-slider-kids");
-    let table = document.querySelector(".offer-slider-table");
 
     if (window.scrollY > 50) {
         myNav.classList.add("navbar-scrolled");
@@ -13,12 +7,10 @@ window.onscroll = () => {
     } else {
         myNav.classList.remove("navbar-scrolled");
         myNav.classList.add("navbar-top");
-        squash.classList.remove("active2");
-        badminton.classList.remove("active2");
-        bouldering.classList.remove("active2");
-        medical.classList.remove("active2");
-        kids.classList.remove("active2");
-        table.classList.remove("active2");
+        sliders.forEach((slider, i) => {
+            slider.classList.contains("active2") ? slider.classList.remove("active2", i == this.id)
+                                                 : slider.classList.toggle("active2", i == this.id);
+        });
     }
 };
 
@@ -49,6 +41,10 @@ menuToggler.addEventListener("click", () => {
 	} else {
 		menuToggler.classList.add("active");
 		navMenu.classList.add("active");
+        sliders.forEach((slider, i) => {
+            slider.classList.contains("active2") ? slider.classList.remove("active2", i == this.id)
+                                                 : slider.classList.toggle("active2", i == this.id);
+        });
 	}
 });
 
@@ -104,6 +100,8 @@ function showHide(elem) {
     sliders.forEach((slider, i) => {
         slider.classList.contains("active2") ? slider.classList.remove("active2", i == this.id)
                                              : slider.classList.toggle("active2", i == this.id);
+        menuToggler.classList.remove("active");
+        navMenu.classList.remove("active");
     });
  
     sliderButtons.forEach((button, i) => {

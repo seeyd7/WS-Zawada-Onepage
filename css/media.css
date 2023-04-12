@@ -97,7 +97,7 @@
         font-size: 18pt;
     }
 }
-@media screen and (max-width: 890px){
+@media screen and (max-width: 1100px){
     .home h1 {
       font-size: 35px;
     }
@@ -143,6 +143,18 @@
     .menu-toggler.active span:nth-child(3){
       transform: rotate(45deg);
       bottom: 14px;
+    }
+    .offer-slider {
+        flex-direction: column;
+    }
+    .offer-slider-content {
+        width: 90%;
+    }
+    .offer-slider-image {
+        width: 90%;
+    }
+    .offer-slider-disable {
+        top: 2vh;
     }
 }
 @media screen and (max-width: 1400px) {
