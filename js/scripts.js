@@ -135,5 +135,10 @@ function disableOfferSlider() {
     medical.classList.remove("active2");
     kids.classList.remove("active2");
     table.classList.remove("active2");
-    sliderButton.classList.remove("active2")
+    sliderButton[0].classList.remove("active2")
+    sliderButton[1].classList.remove("active2")
+    sliderButton[2].classList.remove("active2")
+    sliderButton[3].classList.remove("active2")
+    sliderButton[4].classList.remove("active2")
+    sliderButton[5].classList.remove("active2")
 }
