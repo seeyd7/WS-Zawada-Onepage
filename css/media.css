@@ -202,6 +202,12 @@
     .card {
         width: 80%;
     }
+    .articleholder {
+        width: 90%;
+    }
+    .article-holder-image {
+        width: 115.5%;
+    }
 }
 @media screen and (max-width: 450px) {
     .card {

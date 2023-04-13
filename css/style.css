@@ -53,7 +53,8 @@ a.anchor {
     text-align: center;
     color: #fff;
     text-transform: uppercase;
-    font-size: 3rem;
+    font-size: 2.5rem !important;
+    padding: 1% 0%;
 }
 .heading span {
     color: var(--main-color);
@@ -264,7 +265,7 @@ nav{
     display: flex;
     justify-content: space-around;
     width: 100%;
-} .wrapper h1 {
+} .wrapper h2 {
     text-align: center;
     color: #fff;
     text-transform: uppercase;
@@ -306,7 +307,7 @@ nav{
     top: 8vh;
     padding: 2%;
     font-size: 1rem;
-    background-color: aliceblue;
+    background-color: white;
     position: fixed;
     right: -100%;
     transition: .3s ease-in-out;
@@ -360,9 +361,9 @@ nav{
     align-items: center;
     margin-bottom: 4%;
 }
-.products-wrapper h1 {
+.products-wrapper h2 {
     text-align: center;
-    color: #000;
+    color: white;
     text-transform: uppercase;
     font-size:35px;
 }
@@ -394,6 +395,7 @@ nav{
     margin-bottom: 3%;
 }
 .read-more {
+    color: white;
     background-color: var(--main-color);
     border: none;
     transition: 0.2s ease-in !important;
@@ -404,7 +406,7 @@ nav{
     width: 140px;
 }
 .blog-title {
-    color: white;
+    color: white !important;
     transition: .2s ease-in;
 }
 .blog-title:hover {
@@ -466,7 +468,7 @@ nav{
     align-items: center;
     text-align: center;
 }
-.contact-section h1 {
+.contact-section h2 {
     text-align: center;
     color: #000;
     text-transform: uppercase;
@@ -635,3 +637,47 @@ footer a:hover {
 }
 /* Go to top button */
   
+/* Article page */
+
+/* Article-site */
+.articleholder {
+    min-height: 100vh;
+    margin: auto;
+    padding: 6%; 
+    margin-top: 11%;
+    margin-bottom: 4%;
+    width: 70vw;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    text-justify: inter-word;
+    align-items: center; 
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.589);
+    
+}
+.article-holder-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120.5%;
+    height: 60vh;
+    margin-bottom: 4%;
+    margin-top: 4%;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+.title-article {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: black;
+    font-size: 55px;
+}
+.articleholder img {
+    transform: scale(1.5);
+    margin-top: 4%;
+    justify-self: flex-end;
+}
+/* Article page */
