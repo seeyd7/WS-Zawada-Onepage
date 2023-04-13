@@ -102,13 +102,21 @@ function showHide(elem) {
                                              : slider.classList.toggle("active2", i == this.id);
         menuToggler.classList.remove("active");
         navMenu.classList.remove("active");
+        document.querySelector("html").style.overflow = "hidden";
     });
  
     sliderButtons.forEach((button, i) => {
         button.classList.contains("button-active") ? button.classList.remove("button-active", i == this.id)
-                                             : button.classList.toggle("button-active", i == this.id);
+                                                   : button.classList.toggle("button-active", i == this.id);
     });
 }
+
+sliderButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const html = document.querySelector('html');
+    html.style.overflow = 'visible';
+  });
+});
 
 var offerSliderQuestion = document.querySelectorAll(".offer-slider-question");
 

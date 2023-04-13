@@ -144,9 +144,6 @@
       transform: rotate(45deg);
       bottom: 14px;
     }
-    .offer-slider {
-        flex-direction: column;
-    }
     .offer-slider-content {
         width: 90%;
     }
@@ -154,7 +151,10 @@
         width: 90%;
     }
     .offer-slider-disable {
-        top: 2vh;
+        top: 4vh;
+    }
+    .offer-slider-image {
+        justify-content: center;
     }
 }
 @media screen and (max-width: 1400px) {
@@ -173,6 +173,9 @@
     .gallery-carousel {
         width: 100%;
         height: 64vh;
+    }
+    .offer-slider {
+        flex-direction: column;
     }
 }
 @media screen and (max-width: 1200px) {
