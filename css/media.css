@@ -208,9 +208,16 @@
     .article-holder-image {
         width: 115.5%;
     }
+    .offer-slider-content h2{
+        text-align: center;
+    }
 }
 @media screen and (max-width: 450px) {
     .card {
         width: 98%;
+    }
+    .heading {
+        font-size: 2rem !important;
+        padding: 0 2%;
     }
 }
