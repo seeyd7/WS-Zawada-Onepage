@@ -642,11 +642,10 @@ footer a:hover {
 
 /* Article-site */
 .articleholder {
-    min-height: 100vh;
     margin: auto;
     padding: 6%; 
-    margin-top: 11%;
-    margin-bottom: 4%;
+    margin-top: 22vh;
+    margin-bottom: 6vh;
     width: 70vw;
     display: flex; 
     flex-direction: column; 
@@ -677,8 +676,8 @@ footer a:hover {
     font-size: 55px;
 }
 .articleholder img {
-    transform: scale(1.5);
     margin-top: 4%;
-    justify-self: flex-end;
+    height: 20vh !important;
+    width: auto !important;
 }
 /* Article page */
