@@ -217,7 +217,37 @@
         width: 98%;
     }
     .heading {
-        font-size: 2rem !important;
         padding: 0 2%;
+    }
+}
+@media screen and (max-width: 870px) {
+    .divTable {
+        width: 90%;
+        font-size: 15px;
+    }
+    .heading {
+        font-size: 2rem !important;
+    }
+    .pricing-heading {
+        font-size: 1.5rem !important;
+    }
+}
+@media screen and (max-width: 500px) {
+    .divTable {
+        width: 98%;
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 370px) {
+    .divTable {
+        font-size: 10px;
+    }
+    .pricing-heading {
+        font-size: 1.2rem !important;
+    }
+}
+@media screen and (max-width: 315px) {
+    .divTable {
+        font-size: 8px;
     }
 }
