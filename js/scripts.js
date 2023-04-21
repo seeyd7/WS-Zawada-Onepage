@@ -133,3 +133,11 @@ for (var i = 0; i < offerSliderQuestion.length; i++) {
        wybrany_tekst.style.display = "block";
    });
 }
+
+const Navbar = document.querySelector("nav");
+
+if (Navbar.classList.contains('navbar-top')) {
+    sliders.forEach(container => {
+      container.style.top = '14vh';
+    });
+}
