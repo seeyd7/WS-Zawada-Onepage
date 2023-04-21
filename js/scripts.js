@@ -134,10 +134,26 @@ for (var i = 0; i < offerSliderQuestion.length; i++) {
    });
 }
 
-const Navbar = document.querySelector("nav");
-
-if (Navbar.classList.contains('navbar-top')) {
+window.onscroll = () => {
+  if (window.scrollY > 50) {
+    sliders.forEach(container => {
+      container.style.top = '10vh';
+    });
+  } else {
     sliders.forEach(container => {
       container.style.top = '14vh';
     });
-}
+  }
+};
+
+window.onload = () => {
+    if (window.scrollY > 50) {
+      sliders.forEach(container => {
+        container.style.top = '10vh';
+      });
+    } else {
+      sliders.forEach(container => {
+        container.style.top = '14vh';
+      });
+    }
+  };
