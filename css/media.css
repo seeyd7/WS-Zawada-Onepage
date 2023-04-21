@@ -156,6 +156,10 @@
     .offer-slider-image {
         justify-content: center;
     }
+    .kids-section-text {
+        width: 80%;
+        font-size: 17px !important;
+    }
 }
 @media screen and (max-width: 1400px) {
     .gallery-carousel {
@@ -210,6 +214,10 @@
     }
     .offer-slider-content h2{
         text-align: center;
+    }
+    .kids-section-text {
+        width: 90%;
+        font-size: 16px !important;
     }
 }
 @media screen and (max-width: 450px) {
