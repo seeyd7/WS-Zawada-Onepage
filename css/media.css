@@ -251,3 +251,13 @@
         font-size: 8px;
     }
 }
+@media screen and (max-width: 950px) {
+    .meta-card-kids {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 630px) {
+    .meta-card-kids {
+        width: 70%;
+    }
+}
