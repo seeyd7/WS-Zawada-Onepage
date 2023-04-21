@@ -343,8 +343,8 @@ nav{
     transition: .3s;
     transition-delay: .4s;
     position: absolute;
-    top: 6vh;
-    margin-right: 4%;
+    top: 2vh;
+    margin-right: 1%;
     right: 0;
     cursor: pointer;
 }
