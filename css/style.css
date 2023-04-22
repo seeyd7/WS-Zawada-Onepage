@@ -197,9 +197,6 @@ nav{
 /* Menu */
 
 /* Main - carousel */
-#main {
-    background-color: var(--bg);
-}
 .main-carousel {
     height: 90vh;
     margin-top: calc(9vh + 38px);
