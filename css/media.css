@@ -245,6 +245,9 @@
         width: 98%;
         font-size: 12px;
     }
+    .heading {
+        padding: 5vh 0%;
+    }
 }
 @media screen and (max-width: 370px) {
     .divTable {
