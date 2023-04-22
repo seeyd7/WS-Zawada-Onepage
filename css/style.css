@@ -198,8 +198,9 @@ nav{
 
 /* Main - carousel */
 .main-carousel {
-    height: 100vh;
+    height: 90vh;
     margin-top: calc(9vh + 38px);
+    background-color: var(--bg);
 }
 .flickity-prev-next-button {
     width: 44px;
@@ -261,8 +262,7 @@ nav{
     align-items: center;
     flex-direction: column;
     text-align: center;
-    padding: 2% 1%;
-    padding-top: 38px;
+    margin-top: 3.5vh;
     background-color: var(--bg);
     color: #fff;
 } .wrapper .card-holder {
