@@ -199,7 +199,7 @@ nav{
 /* Main - carousel */
 .main-carousel {
     height: 100vh;
-    margin-top: 38px;
+    margin-top: calc(9vh + 38px);
 }
 .flickity-prev-next-button {
     width: 44px;
