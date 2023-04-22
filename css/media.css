@@ -239,6 +239,13 @@
     .pricing-heading {
         font-size: 1.5rem !important;
     }
+    .carousel-cell h2 {
+        font-size: 26px;
+    }
+    .carousel-cell p {
+        font-size: 20px;
+        width: 80%;
+    }
 }
 @media screen and (max-width: 500px) {
     .divTable {

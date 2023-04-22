@@ -235,6 +235,7 @@ nav{
     width: 70%;
     line-height: 35px;
     color: #fff;
+    text-align: center;
 } 
 .carousel-cell h2 {
     color: var(--main-color);
@@ -247,6 +248,9 @@ nav{
     color: #fff;
     font-size: 64pt;
     padding: 1% 0;
+}
+.flickity-slider {
+    height: 90vh;
 }
 /* Main - carousel */
 
