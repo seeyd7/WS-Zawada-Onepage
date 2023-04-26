@@ -739,7 +739,7 @@ footer a:hover {
     color: #fff;
     text-transform: uppercase;
     font-size: 2rem !important;
-    padding: 1% 0%;
+    padding: 3vh 2%;
 }
 .pricing-heading span {
     color: var(--main-color);
